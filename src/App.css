@@ -23,6 +23,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: url("./img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* ==============Add item container=============== */
@@ -32,27 +35,35 @@ body {
   width: 500px;
   display: flex;
   flex-direction: column;
-  border: 3px solid black;
+  background: var(--black);
   padding: 1.5rem;
   height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(158, 158, 166, 0.25) 0px 13px 27px -5px, rgba(135, 133, 133, 0.3) 0px 8px 16px -8px;
 }
 .add-item-container h1 {
   margin: 0 0 10px 0;
   text-align: center;
+  color: var(--blue);
 }
 .add-item-container h2 {
   margin: 0 0 10px 0;
   text-align: center;
+  color: var(--blue);
 }
 label {
   margin-bottom: 3px;
   font-weight: 500;
+  color: var(--blue);
 }
 .add-item-container input {
   box-sizing: border-box;
   padding: 0.5rem;
   font-family: "Poppins", sans-serif;
   margin-bottom: 15px;
+  background: var(--faintblack);
+  color: var(--blue);
+  font-weight: 500;
 }
 .btn-container {
   display: flex;
@@ -65,8 +76,15 @@ label {
   width: 6rem;
   border: none;
   border-radius: 3px;
+  background: var(--blue);
+  color: var(--black);
+  transition: all 0.25s ease;
+  font-weight: 600;
 }
-
+.btn-container button:hover {
+  background: var(--darkblue);
+  transform: translateY(-4px);
+}
 /* ======================groceries container ============== */
 
 .groceries-container {
@@ -74,20 +92,24 @@ label {
   width: 500px;
   display: flex;
   flex-direction: column;
-  border: 3px solid black;
   padding: 1.5rem;
   height: auto;
   align-items: center;
+  background: var(--black);
+  border-radius: 10px;
+  box-shadow: rgba(158, 158, 166, 0.25) 0px 13px 27px -5px, rgba(135, 133, 133, 0.3) 0px 8px 16px -8px;
   
 }
 
 .groceries-container h1 {
   margin: 0 0 10px 0;
   text-align: center;
+  color: var(--blue);
 }
 .groceries-container h2 {
   margin: 0 0 10px 0;
   text-align: center;
+  color: var(--blue);
 }
 
 
@@ -97,4 +119,80 @@ label {
   width: 6rem;
   border: none;
   border-radius: 3px;
+  background: var(--blue);
+  transition: all 0.25s ease;
+  font-weight: 600;
+  color: var(--black);
+}
+.additembtn button:hover {
+  background: var(--darkblue);
+  transform: translateY(-4px);
+}
+ul
+{
+  width: 100%;
+  padding: 0;
+}
+li
+{
+  background-color:var(--faintblack);
+  font-size: 0.85rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+
+
+@media (max-width:500px)
+{
+  .groceries-container {
+    width: 430px;
+  }
+  .add-item-container
+  {
+    width: 430px;
+  }
+}
+@media (max-width:450px)
+{
+  .groceries-container {
+    width: 380px;
+    padding: 1rem;
+  }
+  .App{
+    padding: 1rem;
+  }
+  .add-item-container
+  {
+    width: 380px;
+    padding: 1rem;
+  }
+}
+@media (max-width:400px)
+{
+  .groceries-container {
+    width: 320px;
+
+  }
+  .add-item-container
+  {
+    width: 320px;
+  }
+}
+@media (max-width:350px)
+{
+  .groceries-container {
+    width: 290px;
+  }
+  .add-item-container
+  {
+    width: 290px;
+  }
 }

@@ -87,17 +87,16 @@ function App() {
           <h1>Personal Shopping List</h1>
           <h2>Groceries List</h2>
           <ul>
-            {/* {itemList.map((item, index) => {
+            {itemList.map((item, index) => {
               return (
                 <li key={index}>
                   <span>{item.title}</span>
-                  <span>{item.quantity}</span>
+                  <span>Quantity:{item.quantity}</span>
                   <span>{item.price}</span>
                 </li>
               );
-            })} */}
-            <li>sdfbds</li>
-            <li>hsdbcds</li>
+            })}
+          
           </ul>
           {displayAddItem && 
           <div className="additembtn"><button  onClick={addItemDisplay}>Add Item</button></div>}
