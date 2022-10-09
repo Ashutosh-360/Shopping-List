@@ -26,6 +26,7 @@ body {
   background: url("./img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 4rem;
 }
 
 /* ==============Add item container=============== */
@@ -168,11 +169,24 @@ li
   }
   .App{
     padding: 1rem;
+    padding-top: 4rem;
   }
   .add-item-container
   {
     width: 380px;
     padding: 1rem;
+  }
+  .groceries-container h1 {
+    font-size: 1.6rem;
+  }
+  .groceries-container h2 {
+    font-size: 1.15rem;
+  }
+  .add-item-container h1 {
+    font-size: 1.6rem;
+  }
+  .add-item-container h2 {
+    font-size: 1.15rem;
   }
 }
 @media (max-width:400px)
@@ -184,6 +198,18 @@ li
   .add-item-container
   {
     width: 320px;
+  }
+  .groceries-container h1 {
+    font-size: 1.4rem;
+  }
+  .groceries-container h2 {
+    font-size: 1.1rem;
+  }
+  .add-item-container h1 {
+    font-size: 1.4rem;
+  }
+  .add-item-container h2 {
+    font-size: 1.1rem;
   }
 }
 @media (max-width:350px)

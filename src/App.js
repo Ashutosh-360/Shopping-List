@@ -23,6 +23,23 @@ function App() {
   };
 
   const onSubmitHandler = () => {
+
+    if(item.title==="")
+    {
+      alert("Please enter title");
+      return;
+    }
+    else if (item.quantity==="")
+    {alert("Please enter quantity");
+    return;
+
+    }
+    else if (item.price==="")
+    {
+      alert("Please enter price");
+    return;
+
+    }
     setItemList([
       ...itemList,
       {
@@ -33,6 +50,12 @@ function App() {
     ]);
     setDisplayAddItem(!displayAddItem);
     setDisplay(!display);
+    setItem({
+      title: "",
+    quantity: "",
+    price: "",
+    })
+
   };
 
   const addItemDisplay = () => {
