@@ -1,6 +1,5 @@
 {
   "name": "shopping-list",
-  "homepage": "https://ashutosh-360.github.io/Shopping-List/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
